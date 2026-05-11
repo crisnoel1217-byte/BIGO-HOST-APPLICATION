@@ -1,232 +1,288 @@
 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRD BIGO Recruitment Portal</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TRD BIGO Recruitment</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
+
+*{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Inter',sans-serif;
-background:#f5f7fb;
+background:#f7f3ff;
 overflow-x:hidden;
 }
 
-.glow{
-box-shadow:0 20px 50px rgba(255,0,128,0.25);
-}
+/* HERO BG */
 
 .hero-bg{
 background:
-linear-gradient(135deg,#ff4da6 0%,#7b61ff 50%,#4ecbff 100%);
+radial-gradient(circle at top left,#ff5fcf33,transparent 20%),
+radial-gradient(circle at bottom right,#00d9ff33,transparent 25%),
+linear-gradient(135deg,#13002d 0%,#30005d 35%,#5200a3 70%,#7d00ff 100%);
 }
 
-.card-blur{
-backdrop-filter:blur(15px);
+/* GLASS */
+
+.glass{
 background:rgba(255,255,255,0.12);
-border:1px solid rgba(255,255,255,0.18);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.15);
+}
+
+.glow{
+box-shadow:0 15px 40px rgba(255,0,170,0.3);
 }
 
 .gradient-text{
-background:linear-gradient(90deg,#fff,#ffe27a);
+background:linear-gradient(90deg,#ff4fd8,#7cf7ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
+
+/* FLOAT */
+
+.float{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
 </style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<section class="hero-bg min-h-screen relative overflow-hidden text-white">
+<section class="hero-bg min-h-screen text-white relative overflow-hidden">
 
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.35),transparent_35%)]"></div>
+<div class="max-w-7xl mx-auto px-6 py-10">
 
-<div class="relative max-w-7xl mx-auto px-6 py-20">
+<!-- NAV -->
+<div class="flex items-center justify-between mb-16">
 
+<div class="flex items-center gap-4">
+
+<img
+src="/mnt/data/BIGO LOGO.png"
+class="w-20 float"
+/>
+
+<div>
+<h1 class="text-3xl font-black">
+BIGO LIVE
+</h1>
+
+<p class="text-sm text-pink-100">
+LIVE YOUR MOMENTS
+</p>
+</div>
+
+</div>
+
+<button
+onclick="document.getElementById('adminSection').scrollIntoView()"
+class="px-6 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 font-bold shadow-xl">
+🔒 Admin Login
+</button>
+
+</div>
+
+<!-- HERO CONTENT -->
 <div class="grid lg:grid-cols-2 gap-14 items-center">
 
 <!-- LEFT -->
 <div>
 
-<div class="inline-flex items-center gap-2 px-5 py-3 rounded-full card-blur mb-6 font-bold tracking-wider text-sm uppercase">
-🔥 Official BIGO Recruitment
+<div class="inline-block px-6 py-3 rounded-full glass mb-6 font-bold uppercase tracking-widest text-sm">
+🔥 Official Recruitment
 </div>
 
-<img
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/BIGO_LIVE_logo.svg/512px-BIGO_LIVE_logo.svg.png"
-class="w-32 mb-6"
->
-
 <h1 class="text-6xl md:text-7xl font-black leading-tight mb-6">
-Turn Your Talent Into
-<span class="block gradient-text">Real Income</span>
+Become a
+<span class="block gradient-text">
+BIGO HOST
+</span>
 </h1>
 
-<p class="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
-Sing, dance, livestream, entertain, and grow your fanbase with TRD BIGO Agency.
-Earn income, bonuses, gifts, and professional creator support.
+<p class="text-xl text-white/90 leading-relaxed mb-8">
+Turn your talent into real income! Sing, dance, podcast,
+DJ, livestream and entertain your audience while earning
+through BIGO gifts and bonuses.
 </p>
 
-<!-- TIMER -->
-<div class="card-blur rounded-3xl p-6 inline-block mb-8 glow">
-<p class="uppercase tracking-[4px] text-sm mb-2 text-pink-100">
-Recruitment Countdown
+<!-- COUNTDOWN -->
+<div class="glass rounded-3xl p-6 inline-block mb-8 glow">
+
+<p class="uppercase tracking-[3px] text-sm mb-2 text-pink-100">
+Recruitment Ends In
 </p>
 
-<h2 id="countdown" class="text-6xl font-black text-yellow-300">
+<h2 id="countdown"
+class="text-6xl font-black text-yellow-300">
 05:00
 </h2>
+
+<p class="mt-2 text-pink-100">
+Minutes : Seconds
+</p>
+
 </div>
 
 <!-- CTA -->
-<div class="flex flex-wrap gap-4 mb-10">
+<div class="flex flex-wrap gap-5 mb-10">
 
 <a href="#apply"
-class="px-8 py-5 bg-white text-black rounded-2xl font-black hover:scale-105 transition-all duration-300">
-Apply Now
-</a>
-
-<a href="#admin"
-class="px-8 py-5 rounded-2xl border border-white/30 card-blur font-bold hover:bg-white/10 transition-all duration-300">
-Admin Dashboard
+class="px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl text-xl font-black hover:scale-105 transition-all duration-300 glow">
+APPLY NOW →
 </a>
 
 </div>
 
-<!-- STREAMER IMAGES -->
-<div class="grid md:grid-cols-2 gap-5">
-
-<div class="bg-white/10 rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-all duration-300">
-
-<img
-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-64 object-cover"
->
-
-<div class="p-5">
-<h3 class="text-2xl font-black mb-2">
-🎤 Singing Streamer
-</h3>
-
-<p class="text-white/80 leading-relaxed">
-Showcase your voice live and receive gifts from supporters worldwide.
+<p class="text-pink-200 font-semibold">
+LIMITED SLOTS ONLY!
 </p>
-</div>
-
-</div>
-
-<div class="bg-white/10 rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-all duration-300">
-
-<img
-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-64 object-cover"
->
-
-<div class="p-5">
-<h3 class="text-2xl font-black mb-2">
-💃 Dance Creator
-</h3>
-
-<p class="text-white/80 leading-relaxed">
-Go viral with dance livestreams and interactive performances.
-</p>
-</div>
-
-</div>
-
-</div>
 
 </div>
 
 <!-- RIGHT -->
-<div>
+<div class="relative">
 
-<div class="card-blur rounded-[35px] p-8 glow">
+<!-- SINGING -->
+<div class="glass rounded-[35px] overflow-hidden glow border border-pink-400 mb-6">
 
-<div class="flex items-center justify-between mb-8">
-<div>
-<p class="text-white/70 mb-2">Monthly Potential</p>
-<h2 class="text-6xl font-black">₱50K+</h2>
+<div class="bg-pink-500 text-white font-bold px-5 py-2 inline-block rounded-br-2xl">
+SINGING LIVE
 </div>
 
-<div class="w-20 h-20 rounded-3xl bg-pink-500 flex items-center justify-center text-4xl">
-🎤
-</div>
-</div>
-
-<div class="grid grid-cols-2 gap-4 mb-6">
-
-<div class="bg-black/20 rounded-3xl p-6">
-<h3 class="text-3xl font-black mb-2">24/7</h3>
-<p class="text-white/70">Agency Support</p>
-</div>
-
-<div class="bg-black/20 rounded-3xl p-6">
-<h3 class="text-3xl font-black mb-2">1000+</h3>
-<p class="text-white/70">Active Hosts</p>
-</div>
+<img
+src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-[330px] object-cover"
+/>
 
 </div>
 
-<div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl p-6">
-<h3 class="text-2xl font-black mb-2">
-No Experience Required
-</h3>
+<!-- DANCING -->
+<div class="glass rounded-[35px] overflow-hidden glow border border-cyan-400 ml-10">
 
-<p class="text-pink-100">
-We provide mentoring, coaching, and growth strategies for new streamers.
+<div class="bg-cyan-400 text-black font-bold px-5 py-2 inline-block rounded-br-2xl">
+DANCING LIVE
+</div>
+
+<img
+src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-[280px] object-cover"
+/>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+<section class="py-24 px-6 bg-[#faf7ff]">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-center text-5xl font-black mb-16">
+WHY JOIN OUR AGENCY?
+</h2>
+
+<div class="grid md:grid-cols-5 gap-6">
+
+<div class="bg-white rounded-3xl p-8 text-center shadow-xl">
+<div class="text-5xl mb-5">💎</div>
+<h3 class="font-black text-xl mb-3">HIGH INCOME</h3>
+<p class="text-gray-500">
+Earn through gifts and performance.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-8 text-center shadow-xl">
+<div class="text-5xl mb-5">⭐</div>
+<h3 class="font-black text-xl mb-3">FULL SUPPORT</h3>
+<p class="text-gray-500">
+Guidance every step of the way.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-8 text-center shadow-xl">
+<div class="text-5xl mb-5">👑</div>
+<h3 class="font-black text-xl mb-3">BONUSES</h3>
+<p class="text-gray-500">
+Monthly rewards and incentives.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-8 text-center shadow-xl">
+<div class="text-5xl mb-5">⏰</div>
+<h3 class="font-black text-xl mb-3">FLEXIBLE</h3>
+<p class="text-gray-500">
+Stream anytime you want.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-8 text-center shadow-xl">
+<div class="text-5xl mb-5">🌟</div>
+<h3 class="font-black text-xl mb-3">FANBASE</h3>
+<p class="text-gray-500">
+Grow your audience worldwide.
 </p>
 </div>
 
 </div>
 
-</div>
-
-</div>
 </div>
 
 </section>
 
 <!-- APPLICATION -->
-<section id="apply" class="max-w-5xl mx-auto px-6 py-24">
+<section id="apply" class="py-24 px-6">
 
-<div class="text-center mb-14">
-<h2 class="text-5xl font-black mb-4">
-Application Form
+<div class="max-w-5xl mx-auto bg-white rounded-[40px] shadow-2xl p-10 md:p-14">
+
+<h2 class="text-center text-5xl font-black mb-14 gradient-text">
+APPLICATION FORM
 </h2>
 
-<p class="text-gray-500 text-lg">
-Fill out the form below to apply as a BIGO Host.
-</p>
-</div>
-
-<form id="applicationForm"
-class="bg-white rounded-[35px] shadow-2xl border border-gray-200 p-8 md:p-12 space-y-6">
+<form id="applicationForm" class="space-y-6">
 
 <div class="grid md:grid-cols-2 gap-6">
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Full Name
-</label>
+<label class="font-bold mb-2 block">Full Name</label>
 
-<input type="text" id="fullName"
+<input type="text"
+id="fullName"
 required
+placeholder="Enter your full name"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Age
-</label>
+<label class="font-bold mb-2 block">Age</label>
 
-<input type="number" id="age"
+<input type="number"
+id="age"
 required
+placeholder="Enter your age"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
@@ -235,55 +291,54 @@ class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:bo
 <div class="grid md:grid-cols-2 gap-6">
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Facebook Profile
-</label>
+<label class="font-bold mb-2 block">Facebook Profile</label>
 
-<input type="text" id="facebook"
+<input type="text"
+id="facebook"
 required
+placeholder="https://facebook.com/yourprofile"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Contact Number
-</label>
+<label class="font-bold mb-2 block">Contact Number</label>
 
-<input type="text" id="contact"
+<input type="text"
+id="contact"
 required
+placeholder="09XXXXXXXXX"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 </div>
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Complete Address
-</label>
+<label class="font-bold mb-2 block">Complete Address</label>
 
-<input type="text" id="address"
+<input type="text"
+id="address"
 required
+placeholder="House No., Street, Barangay, City"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 <div class="grid md:grid-cols-2 gap-6">
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-BIGO ID
-</label>
+<label class="font-bold mb-2 block">BIGO ID</label>
 
-<input type="text" id="bigoId"
+<input type="text"
+id="bigoId"
 required
+placeholder="Enter your BIGO ID"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
-Government ID
-</label>
+<label class="font-bold mb-2 block">Government ID</label>
 
-<select id="governmentId"
+<select
+id="governmentId"
 required
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 
@@ -295,8 +350,6 @@ class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:bo
 <option>PhilHealth ID</option>
 <option>TIN ID</option>
 <option>UMID</option>
-<option>Postal ID</option>
-<option>Voter's ID</option>
 
 </select>
 
@@ -304,88 +357,180 @@ class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:bo
 
 </div>
 
+<!-- TALENT -->
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
+
+<label class="font-bold mb-2 block">
+Talent Category
+</label>
+
+<select
+id="talent"
+required
+class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
+
+<option>Select your talent</option>
+<option>🎤 Singing</option>
+<option>💃 Dancing</option>
+<option>🎧 DJ</option>
+<option>🎙 Podcast</option>
+<option>🎮 Gaming</option>
+<option>😂 Comedy</option>
+<option>💄 Beauty & Makeup</option>
+<option>🍳 Cooking</option>
+<option>🌟 Lifestyle Content</option>
+
+</select>
+
+</div>
+
+<div>
+<label class="font-bold mb-2 block">
 Email Address
 </label>
 
-<input type="email" id="email"
+<input type="email"
+id="email"
 required
+placeholder="yourmail@example.com"
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
 </div>
 
 <div>
-<label class="block mb-2 font-semibold text-gray-600">
+<label class="font-bold mb-2 block">
 Why do you want to become a BIGO Host?
 </label>
 
-<textarea id="reason"
+<textarea
+id="reason"
 rows="5"
+placeholder="Write your reason here..."
 class="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-pink-500"></textarea>
 </div>
 
 <button
 type="submit"
-class="w-full py-5 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xl font-black hover:scale-[1.02] transition-all duration-300">
-Submit Application
+class="w-full py-5 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xl font-black hover:scale-[1.02] transition-all duration-300 glow">
+SUBMIT APPLICATION 🚀
 </button>
 
 </form>
 
+</div>
+
 </section>
 
 <!-- ADMIN -->
-<section id="admin" class="max-w-7xl mx-auto px-6 py-24">
+<section id="adminSection"
+class="py-20 px-6 bg-[#f3efff] border-t border-purple-100">
 
-<div class="flex flex-wrap gap-4 items-center justify-between mb-10">
+<div class="max-w-xl mx-auto">
 
-<div>
-<h2 class="text-5xl font-black mb-3">
-Admin Dashboard
+<div class="text-center mb-10">
+
+<div class="text-5xl mb-4">🔒</div>
+
+<h2 class="text-4xl font-black mb-3">
+ADMIN LOGIN
 </h2>
 
-<p class="text-gray-500 text-lg">
-Manage applicants and export recruitment data.
+<p class="text-gray-500">
+This area is restricted to admin only.
+</p>
+
+</div>
+
+<div class="bg-white rounded-[35px] p-10 shadow-2xl">
+
+<div class="mb-6">
+
+<label class="font-bold mb-2 block">
+Username
+</label>
+
+<input type="text"
+id="adminUser"
+placeholder="CRIS123"
+class="w-full border border-gray-300 rounded-2xl px-5 py-4">
+</div>
+
+<div class="mb-6">
+
+<label class="font-bold mb-2 block">
+Password
+</label>
+
+<input type="password"
+id="adminPass"
+placeholder="TRD123"
+class="w-full border border-gray-300 rounded-2xl px-5 py-4">
+</div>
+
+<button
+onclick="loginAdmin()"
+class="w-full py-5 rounded-2xl bg-gradient-to-r from-pink-500 to-blue-500 text-white text-xl font-black">
+LOGIN →
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+<section
+id="dashboard"
+class="hidden py-24 px-6 bg-white">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="flex items-center justify-between mb-10">
+
+<div>
+<h2 class="text-5xl font-black mb-2">
+ADMIN DASHBOARD
+</h2>
+
+<p class="text-gray-500">
+TRD BIGO Recruitment System
 </p>
 </div>
 
-<div class="flex gap-4">
-
 <button
 onclick="exportToExcel()"
-class="px-6 py-4 rounded-2xl bg-green-500 text-white font-black hover:scale-105 transition-all duration-300">
+class="px-6 py-4 rounded-2xl bg-green-500 text-white font-black">
 Export Excel
 </button>
 
 </div>
 
-</div>
-
 <div class="grid md:grid-cols-4 gap-6 mb-8">
 
-<div class="bg-white rounded-3xl p-8 shadow-xl">
-<p class="text-gray-500 mb-2">Total Applicants</p>
-<h3 id="totalApplicants" class="text-5xl font-black text-pink-500">
+<div class="bg-pink-50 rounded-3xl p-8">
+<p>Total Applicants</p>
+<h3 id="totalApplicants"
+class="text-5xl font-black text-pink-500">
 0
 </h3>
 </div>
 
-<div class="bg-white rounded-3xl p-8 shadow-xl">
-<p class="text-gray-500 mb-2">Agency</p>
+<div class="bg-purple-50 rounded-3xl p-8">
+<p>Agency</p>
 <h3 class="text-3xl font-black">
 TRD Agency
 </h3>
 </div>
 
-<div class="bg-white rounded-3xl p-8 shadow-xl">
-<p class="text-gray-500 mb-2">Reference BIGO ID</p>
-<h3 class="text-3xl font-black text-pink-500">
+<div class="bg-cyan-50 rounded-3xl p-8">
+<p>Reference BIGO ID</p>
+<h3 class="text-3xl font-black">
 TRD10_28
 </h3>
 </div>
 
-<div class="bg-white rounded-3xl p-8 shadow-xl">
-<p class="text-gray-500 mb-2">Recruitment Status</p>
+<div class="bg-green-50 rounded-3xl p-8">
+<p>Status</p>
 <h3 class="text-3xl font-black text-green-500">
 OPEN
 </h3>
@@ -397,27 +542,31 @@ OPEN
 
 <div class="overflow-x-auto">
 
-<table class="w-full text-left">
+<table class="w-full">
 
 <thead class="bg-gray-100">
 <tr>
-<th class="p-5">Name</th>
-<th class="p-5">Age</th>
-<th class="p-5">BIGO ID</th>
-<th class="p-5">Contact</th>
-<th class="p-5">Government ID</th>
+<th class="p-5 text-left">Name</th>
+<th class="p-5 text-left">Talent</th>
+<th class="p-5 text-left">BIGO ID</th>
+<th class="p-5 text-left">Contact</th>
 </tr>
 </thead>
 
-<tbody id="applicantTable">
+<tbody id="tableBody">
+
 <tr>
-<td colspan="5" class="p-10 text-center text-gray-400">
-No applications submitted yet.
+<td colspan="4"
+class="p-10 text-center text-gray-400">
+No applicants yet.
 </td>
 </tr>
+
 </tbody>
 
 </table>
+
+</div>
 
 </div>
 
@@ -427,11 +576,11 @@ No applications submitted yet.
 
 <script>
 
-let applications = [];
-
-const countdown = document.getElementById("countdown");
+/* COUNTDOWN */
 
 let time = 300;
+
+const countdown = document.getElementById("countdown");
 
 const timer = setInterval(() => {
 
@@ -451,87 +600,109 @@ countdown.innerHTML = "CLOSED";
 
 },1000);
 
-document.getElementById("applicationForm")
-.addEventListener("submit", function(e){
+/* APPLICATION */
+
+let applications = [];
+
+document
+.getElementById("applicationForm")
+.addEventListener("submit",function(e){
 
 e.preventDefault();
 
 const data = {
-fullName: document.getElementById("fullName").value,
-age: document.getElementById("age").value,
-facebook: document.getElementById("facebook").value,
-contact: document.getElementById("contact").value,
-address: document.getElementById("address").value,
-bigoId: document.getElementById("bigoId").value,
-governmentId: document.getElementById("governmentId").value,
-email: document.getElementById("email").value,
-reason: document.getElementById("reason").value
+name:fullName.value,
+talent:talent.value,
+bigo:bigoId.value,
+contact:contact.value
 };
 
 applications.push(data);
 
-document.getElementById("totalApplicants").innerText =
-applications.length;
-
 renderApplicants();
 
-const body =
-`NEW BIGO HOST APPLICATION
+document.getElementById("totalApplicants").innerHTML =
+applications.length;
 
-Full Name: ${data.fullName}
-Age: ${data.age}
-Facebook: ${data.facebook}
-Contact Number: ${data.contact}
-Address: ${data.address}
-BIGO ID: ${data.bigoId}
-Government ID: ${data.governmentId}
-Email: ${data.email}
+alert("Application Submitted!");
+
+const body =
+`NEW BIGO APPLICATION
+
+Name: ${fullName.value}
+Age: ${age.value}
+Facebook: ${facebook.value}
+Contact: ${contact.value}
+Address: ${address.value}
+BIGO ID: ${bigoId.value}
+Government ID: ${governmentId.value}
+Talent: ${talent.value}
+Email: ${email.value}
 
 Reason:
-${data.reason}`;
+${reason.value}`;
 
 window.location.href =
 `mailto:crisnoel1217@gmail.com?subject=BIGO Host Application&body=${encodeURIComponent(body)}`;
 
-alert("Application submitted successfully!");
-
-e.target.reset();
+this.reset();
 
 });
+
+/* RENDER */
 
 function renderApplicants(){
 
-const table = document.getElementById("applicantTable");
-
-if(applications.length === 0){
-table.innerHTML =
-`
-<tr>
-<td colspan="5" class="p-10 text-center text-gray-400">
-No applications submitted yet.
-</td>
-</tr>
-`;
-return;
-}
+const table = document.getElementById("tableBody");
 
 table.innerHTML = "";
 
-applications.forEach((app) => {
+applications.forEach((app)=>{
 
 table.innerHTML += `
-<tr class="border-b border-gray-200 hover:bg-gray-50">
-<td class="p-5 font-semibold">${app.fullName}</td>
-<td class="p-5">${app.age}</td>
-<td class="p-5 text-pink-500 font-bold">${app.bigoId}</td>
+<tr class="border-b">
+<td class="p-5">${app.name}</td>
+<td class="p-5">${app.talent}</td>
+<td class="p-5">${app.bigo}</td>
 <td class="p-5">${app.contact}</td>
-<td class="p-5">${app.governmentId}</td>
 </tr>
 `;
 
 });
 
 }
+
+/* ADMIN LOGIN */
+
+function loginAdmin(){
+
+const user =
+document.getElementById("adminUser").value;
+
+const pass =
+document.getElementById("adminPass").value;
+
+if(user === "cris123" && pass === "TRD123"){
+
+document
+.getElementById("dashboard")
+.classList.remove("hidden");
+
+document
+.getElementById("dashboard")
+.scrollIntoView({behavior:"smooth"});
+
+alert("Admin Login Success");
+
+}else{
+
+alert("Invalid Admin Credentials");
+
+}
+
+}
+
+/* EXPORT */
 
 function exportToExcel(){
 
@@ -541,43 +712,38 @@ return;
 }
 
 const headers = [
-"Full Name",
-"Age",
-"Facebook",
-"Contact",
-"Address",
+"Name",
+"Talent",
 "BIGO ID",
-"Government ID",
-"Email"
+"Contact"
 ];
 
-const rows = applications.map((app) => [
-app.fullName,
-app.age,
-app.facebook,
-app.contact,
-app.address,
-app.bigoId,
-app.governmentId,
-app.email
+const rows =
+applications.map((app)=>[
+app.name,
+app.talent,
+app.bigo,
+app.contact
 ]);
 
-const csvContent =
-[headers, ...rows]
-.map(e => e.join(","))
+const csv =
+[headers,...rows]
+.map(e=>e.join(","))
 .join("\n");
 
-const blob = new Blob(
-[csvContent],
-{type:"text/csv;charset=utf-8;"}
-);
+const blob =
+new Blob([csv],{
+type:"text/csv;charset=utf-8;"
+});
 
-const link = document.createElement("a");
+const link =
+document.createElement("a");
 
-const url = URL.createObjectURL(blob);
+link.href =
+URL.createObjectURL(blob);
 
-link.href = url;
-link.download = "TRD_BIGO_Applicants.csv";
+link.download =
+"TRD_BIGO_APPLICANTS.csv";
 
 document.body.appendChild(link);
 
