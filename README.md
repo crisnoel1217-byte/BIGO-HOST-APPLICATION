@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <vid src="https://www.facebook.com/watch/?v=788774536777418">
+    <img src="https://www.facebook.com/photo?fbid=122095514558766666&set=a.122095503524766666">
   </div>
 </section>
 
