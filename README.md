@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="stream_girl.png">
+    <img src="Pictures/stream_girl.png">
   </div>
 </section>
 
