@@ -217,6 +217,7 @@ onsubmit="showThankYou()">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New BIGO Host Application">
 
+<input type="text" bigo ID="First Name" placeholder="Bigo ID" required>
 <input type="text" name="First Name" placeholder="First Name" required>
 <input type="text" name="Last Name" placeholder="Last Name" required>
 <input type="text" name="Middle Name" placeholder="Middle Name">
@@ -234,7 +235,7 @@ onsubmit="showThankYou()">
   <option>Driver License</option>
   <option>SSS ID</option>
   <option>Philhealth</option>
-  <option>tIN ID</option>
+  <option>TIN ID</option>
 </select>
 
 <select name="Talent" required>
