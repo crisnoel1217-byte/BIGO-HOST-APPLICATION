@@ -365,7 +365,7 @@ footer{
 <header>
   <div class="logo">
     <h1>TRD BIGO HOST APPLICATION</h1>
-    <p>Recruitment SITE</p>
+    <p>Recruitment Site</p>
   </div>
 
   <a href="#apply" class="apply-btn">Apply Now</a>
@@ -404,8 +404,8 @@ footer{
       </div>
 
       <div class="stat-card">
-        <h3>₱3K\+</h3>
-        <p>Earnings Start From</p>
+        <h3>₱3K-50K+</h3>
+        <p> YOU CAN EARN 3,000 UP TO 50,000</p>
       </div>
     </div>
   </div>
