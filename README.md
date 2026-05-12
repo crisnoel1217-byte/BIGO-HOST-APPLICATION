@@ -623,7 +623,8 @@ footer{
 <footer>
   <div>
     © 2026 TRD BIGO HOST AGENCY . All rights reserved.
-  </div>PH-TRD2 BIGO ID: TRD10_28
+  <PH-TRD2 AGENCY 
+  BIGO ID: TRD10_28
   </div>
 
   <div class="socials">
