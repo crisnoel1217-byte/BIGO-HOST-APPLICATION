@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="https://chatgpt.com/s/m_6a034026d69c8191bf96187363d396f7">
+    <img src="https://chatgpt.com/s/m_6a0341d00b5481918ae4553a5f8a8648">
   </div>
 </section>
 
