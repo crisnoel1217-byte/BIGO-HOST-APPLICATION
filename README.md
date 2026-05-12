@@ -417,6 +417,87 @@ footer{
 
 <section class="features" id="features">
   <div class="section-title">
+    <h2>Why Become a BIGO Host?</h2>
+    <p>Experience exciting opportunities, income potential, and online fame.</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="icon">🎁</div>
+      <h3>Monthly Bonuses</h3>
+      <p>Earn exciting bonuses, gifts, diamonds, and incentives every month based on your streaming performance.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🌍</div>
+      <h3>Worldwide Audience</h3>
+      <p>Connect with viewers globally and grow your fanbase through entertaining livestream content.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🔥</div>
+      <h3>Trending Events</h3>
+      <p>Join BIGO competitions, PK battles, live challenges, and featured events to boost visibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="section-title">
+    <h2>Host Requirements</h2>
+    <p>Before applying, make sure you meet the following requirements.</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="icon">🪪</div>
+      <h3>Valid Government ID</h3>
+      <p>Applicants must provide a valid government-issued ID such as National ID, Passport, Driver’s License, Postal ID, or PhilHealth ID.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🔞</div>
+      <h3>18 Years Old Above</h3>
+      <p>All applicants must be 18 years old or above to qualify as an official BIGO Host.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">📱</div>
+      <h3>Good Internet & Phone</h3>
+      <p>You need a stable internet connection and a smartphone or device capable of livestreaming smoothly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="section-title">
+    <h2>Recommended Livestream Setup</h2>
+    <p>Professional setup helps attract more viewers and supporters.</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="icon">💡</div>
+      <h3>Ring Light</h3>
+      <p>Use a ring light or soft lighting setup for a brighter and more professional appearance during livestreams.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🎵</div>
+      <h3>Sound Card & Music</h3>
+      <p>Improve your livestream quality with a sound card, microphone, and background music setup for better entertainment.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">✨</div>
+      <h3>Neat Background</h3>
+      <p>Maintain a clean and aesthetic streaming background to create a professional and attractive livestream environment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="section-title">
     <h2>Why Join Our Agency?</h2>
     <p>Everything you need to become a successful BIGO streamer.</p>
   </div>
