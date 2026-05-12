@@ -234,25 +234,6 @@ footer{
   <div>
     <h2>Become the Next <span>BIGO Star</span></h2>
     <p>Join our agency family and start streaming. Earn from ₱3K above with full support, training, and a friendly community.</p>
-<div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop">
-
-    <!-- LIVE OVERLAY -->
-    <div class="live-overlay">
-      <div class="live-top">🔴 LIVE PREVIEW MODE</div>
-
-      <div class="live-left">❤️ 1.2K<br>👁 3.5K</div>
-
-      <div class="live-bottom">
-        <div class="live-name">TRD Agency Host Room</div>
-        <div class="live-sub">Recruitment livestream preview</div>
-      </div>
-
-      <!-- FLOAT CHAT -->
-      <div id="floatChatContainer"></div>
-    </div>
-  </div>
-</section>
 
     <!-- 🔴 LIVE FEED -->
     <div class="live-feed">
@@ -262,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop">
+    <vid src="https://www.facebook.com/watch/?v=788774536777418">
   </div>
 </section>
 
