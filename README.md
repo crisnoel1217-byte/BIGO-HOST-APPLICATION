@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000cadc71f89b0097c539b9dd25&ts=494054&p=fs&cid=1&sig=21a8a68dea7ea911bb65acfe34266dd2191c5a4d371d3268b7be2b551efd3f4f&v=0.jpg">
+    <img src="https://chatgpt.com/s/m_6a034026d69c8191bf96187363d396f7">
   </div>
 </section>
 
