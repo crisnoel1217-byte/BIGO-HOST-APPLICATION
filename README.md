@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -394,8 +394,8 @@ footer{
 
     <div class="stats">
       <div class="stat-card">
-        <h3>5K+</h3>
-        <p>Active Hosts</p>
+        <h3>ACTIVE</h3>
+        <p>Agency & Family</p>
       </div>
 
       <div class="stat-card">
@@ -404,14 +404,14 @@ footer{
       </div>
 
       <div class="stat-card">
-        <h3>₱50K+</h3>
-        <p>Top Earnings</p>
+        <h3>₱3K\+</h3>
+        <p>Earnings Start From</p>
       </div>
     </div>
   </div>
 
   <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop" alt="BIGO Host">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" alt="BIGO Streaming Host with Microphone">
   </div>
 </section>
 
@@ -624,7 +624,6 @@ footer{
   <div>
     © 2026 PH-TRD2 AGENCY . All rights reserved.
     BIGO ID: TRD10_28
-  
   </div>
 
   <div class="socials">
