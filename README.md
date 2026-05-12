@@ -1,266 +1,436 @@
 
-  return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/10 to-cyan-500/20 blur-3xl"></div>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TRD BIGO HOST AGENCY</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-      {/* Navbar */}
-      <header className="relative z-10 flex items-center justify-between px-8 py-6 border-b border-white/10 backdrop-blur-md">
-        <div>
-          <h1 className="text-2xl font-black tracking-wide bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-            TRD BIGO HOST
-          </h1>
-          <p className="text-xs text-gray-400">Modern Recruitment Platform</p>
-        </div>
-
-        <a href="#apply-form" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-full font-semibold shadow-lg shadow-pink-500/30 inline-block">
-          Apply Now
-        </a>
-      </header>
-
-      {/* Hero Section */}
-      <section className="relative z-10 px-8 lg:px-20 py-24 grid lg:grid-cols-2 gap-14 items-center">
-        <div>
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-2 rounded-full mb-6 backdrop-blur-md">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <span className="text-sm text-gray-300">Now Hiring BIGO Live Hosts</span>
-          </div>
-
-          <h2 className="text-5xl lg:text-7xl font-black leading-tight mb-6">
-            Become a
-            <span className="block bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              BIGO Star
-            </span>
-          </h2>
-
-          <p className="text-gray-400 text-lg leading-relaxed max-w-xl mb-8">
-            Join our next-generation live streaming agency and grow your audience, income, and online presence with full support, bonuses, and professional coaching.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a href="#apply-form" className="bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-pink-500/30 inline-block">
-              Apply as Host
-            </a>
-
-            <button className="border border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all">
-              Learn More
-            </button>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 mt-12">
-            <div className="bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-md">
-              <h3 className="text-3xl font-black text-pink-400">5K+</h3>
-              <p className="text-gray-400 text-sm">Active Hosts</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-md">
-              <h3 className="text-3xl font-black text-cyan-400">24/7</h3>
-              <p className="text-gray-400 text-sm">Support Team</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-md">
-              <h3 className="text-3xl font-black text-purple-400">₱50K+</h3>
-              <p className="text-gray-400 text-sm">Top Earnings</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Side Card */}
-        <div className="relative">
-          <div className="absolute -top-10 -left-10 w-40 h-40 bg-pink-500/30 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-cyan-500/30 rounded-full blur-3xl"></div>
-
-          <div className="relative bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
-              alt="BIGO Host"
-              className="rounded-3xl h-[420px] w-full object-cover mb-6"
-            />
-
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-2xl font-bold">Live Your Dream</h3>
-                <p className="text-gray-400">Stream • Earn • Grow</p>
-              </div>
-
-              <a href="#apply-form" className="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-3 rounded-xl font-bold hover:scale-105 transition-all inline-block">
-                Apply
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="relative z-10 px-8 lg:px-20 py-16">
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-black mb-4">Why Join Our Agency?</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Everything you need to become a successful BIGO live streamer.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: 'Daily Coaching',
-              desc: 'Get professional training and streaming strategies from experienced managers.',
-              icon: '🎤'
-            },
-            {
-              title: 'High Earnings',
-              desc: 'Receive salary bonuses, gifts, commissions, and special event rewards.',
-              icon: '💰'
-            },
-            {
-              title: 'Fast Growth',
-              desc: 'Boost your followers and become a recognized creator on BIGO Live.',
-              icon: '🚀'
-            }
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
-            >
-              <div className="text-5xl mb-5">{item.icon}</div>
-              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Apply Section */}
-      <section className="relative z-10 px-8 lg:px-20 py-24">
-        <div className="bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-cyan-500/20 border border-white/10 rounded-[40px] p-10 lg:p-16 text-center backdrop-blur-xl">
-          <h2 className="text-5xl font-black mb-6">
-            Ready to Start Streaming?
-          </h2>
-
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
-            Apply today and join one of the fastest-growing BIGO host agencies in the Philippines.
-          </p>
-
-          <a href="#apply-form" className="bg-gradient-to-r from-pink-500 to-purple-600 px-10 py-5 rounded-2xl text-xl font-black hover:scale-105 transition-all shadow-2xl shadow-pink-500/30 inline-block">
-            APPLY NOW
-          </a>
-        </div>
-      </section>
-
-      {/* Application Form */}
-      <section id="apply-form" className="relative z-10 px-8 lg:px-20 py-24">
-        <div className="max-w-4xl mx-auto bg-white/5 border border-white/10 rounded-[40px] p-8 lg:p-14 backdrop-blur-xl">
-          <div className="text-center mb-10">
-            <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-              BIGO Host Application Form
-            </h2>
-            <p className="text-gray-400">Fill out the form below and submit your application.</p>
-          </div>
-
-          <form
-            action="https://formsubmit.co/cr<form
-            action="https://formsubmit.co/crisnoel1217@gmail.com"
-            method="POST"
-            className="grid md:grid-cols-2 gap-6"
-            onSubmit={() => {
-              setTimeout(() => {
-                alert('🎉 Thank you for applying to TRD BIGO HOST AGENCY! We will review your application and contact you soon.')
-              }, 500)
-            }}
-          >Submit={() => {
-              setTimeout(() => {
-                alert('🎉 Thank you for applying to TRD BIGO HOST AGENCY! We will review your application and contact you soon.')
-              }, 500)
-            }}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_subject" value="New BIGO Host Application" />
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">First Name</label>
-              <input type="text" name="First Name" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Last Name</label>
-              <input type="text" name="Last Name" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Middle Name</label>
-              <input type="text" name="Middle Name" className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Age</label>
-              <input type="number" name="Age" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div className="md:col-span-2">
-              <label className="block mb-2 text-sm text-gray-300">Address</label>
-              <input type="text" name="Address" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">CP Number</label>
-              <input type="tel" name="CP Number" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Email Address</label>
-              <input type="email" name="Email" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500" />
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Valid Government ID</label>
-              <select name="Government ID" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
-                <option value="">Select ID</option>
-                <option>Passport</option>
-                <option>National ID</option>
-                <option>Driver's License</option>
-                <option>SSS ID</option>
-                <option>PhilHealth ID</option>
-                <option>TIN ID</option>
-                <option>Postal ID</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block mb-2 text-sm text-gray-300">Talent Category</label>
-              <select name="Talent" required className="w-full bg-black/40 border border-white/10 rounded-2xl px-5 py-4 outline-none focus:border-pink-500">
-                <option value="">Select Talent</option>
-                <option>Singing</option>
-                <option>Dancing</option>
-                <option>Gaming</option>
-                <option>Entertainment</option>
-                <option>Vlogging</option>
-                <option>Beauty Content</option>
-                <option>Comedy</option>
-              </select>
-            </div>
-
-            <div className="md:col-span-2">
-              <button type="submit" className="w-full bg-gradient-to-r from-pink-500 to-purple-600 py-5 rounded-2xl text-xl font-black hover:scale-[1.02] transition-all shadow-2xl shadow-pink-500/30">
-                SUBMIT APPLICATION
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10 py-8 px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-4 text-gray-400">
-        <div>
-          © 2026 TRD BIGO HOST AGENCY. All rights reserved.
-        </div>
-
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-white transition-colors">Facebook</a>
-          <a href="#" className="hover:text-white transition-colors">Telegram</a>
-          <a href="#" className="hover:text-white transition-colors">Instagram</a>
-        </div>
-      </footer>
-    </div>
-  )
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
 }
+
+body{
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+  radial-gradient(circle at top left,#ff00aa33,transparent 40%),
+  radial-gradient(circle at bottom right,#00e5ff22,transparent 40%),
+  radial-gradient(circle at center,#7b00ff22,transparent 40%);
+  z-index:-1;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(20px);
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,0.4);
+  z-index:999;
+}
+
+.logo h1{
+  font-size:28px;
+  font-weight:900;
+  background:linear-gradient(90deg,#ff2fb9,#00e5ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.logo p{
+  color:#999;
+  font-size:12px;
+}
+
+.apply-btn{
+  text-decoration:none;
+  background:linear-gradient(90deg,#ff008c,#7b00ff);
+  padding:14px 28px;
+  border-radius:50px;
+  color:white;
+  font-weight:700;
+  transition:.3s;
+  box-shadow:0 0 30px rgba(255,0,140,0.4);
+}
+
+.apply-btn:hover{
+  transform:translateY(-3px) scale(1.03);
+}
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  padding:80px 8%;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  margin-bottom:25px;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  background:#00ff88;
+  border-radius:50%;
+  animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+  0%{opacity:1}
+  50%{opacity:.4}
+  100%{opacity:1}
+}
+
+.hero h2{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:25px;
+}
+
+.hero h2 span{
+  background:linear-gradient(90deg,#ff2fb9,#7b61ff,#00e5ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+  color:#aaa;
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:35px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.secondary-btn{
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.1);
+  color:white;
+  background:rgba(255,255,255,0.05);
+}
+
+.stats{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.stat-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:24px;
+  backdrop-filter:blur(20px);
+}
+
+.stat-card h3{
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+.hero-image{
+  position:relative;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:35px;
+  height:700px;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.features{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title h2{
+  font-size:52px;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  color:#aaa;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.feature-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:35px;
+  padding:40px;
+  transition:.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,0.08);
+}
+
+.feature-card .icon{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.feature-card h3{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.feature-card p{
+  color:#aaa;
+  line-height:1.7;
+}
+
+.form-section{
+  padding:100px 8%;
+}
+
+.form-container{
+  max-width:1100px;
+  margin:auto;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:40px;
+  padding:60px;
+  backdrop-filter:blur(20px);
+}
+
+.form-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.form-title h2{
+  font-size:52px;
+  margin-bottom:15px;
+  background:linear-gradient(90deg,#ff2fb9,#00e5ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.form-title p{
+  color:#aaa;
+}
+
+form{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+label{
+  margin-bottom:10px;
+  color:#ddd;
+}
+
+input,select{
+  padding:18px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(0,0,0,0.4);
+  color:white;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus,select:focus{
+  border-color:#ff2fb9;
+}
+
+.submit-btn{
+  grid-column:1/-1;
+  padding:20px;
+  border:none;
+  border-radius:20px;
+  background:linear-gradient(90deg,#ff008c,#7b00ff);
+  color:white;
+  font-size:20px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.3s;
+  box-shadow:0 0 40px rgba(255,0,140,0.4);
+}
+
+.submit-btn:hover{
+  transform:scale(1.02);
+}
+
+footer{
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding:40px 8%;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+  color:#888;
+}
+
+.socials{
+  display:flex;
+  gap:20px;
+}
+
+.socials a{
+  color:white;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .hero,
+  .feature-grid,
+  form{
+    grid-template-columns:1fr;
+  }
+
+  .hero h2{
+    font-size:52px;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .hero-image img{
+    height:500px;
+  }
+
+  .form-container{
+    padding:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1>TRD BIGO HOST</h1>
+    <p>Modern Recruitment Platform</p>
+  </div>
+
+  <a href="#apply" class="apply-btn">Apply Now</a>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="badge">
+      <div class="dot"></div>
+      <span>Now Hiring BIGO Live Hosts</span>
+    </div>
+
+    <h2>
+      Become a <br>
+      <span>BIGO Star</span>
+    </h2>
+
+    <p>
+      Join our next-generation streaming agency and grow your audience, income, and online presence with full support and professional coaching.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#apply" class="apply-btn">Apply as Host</a>
+      <a href="#features" class="secondary-btn">Learn More</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>5K+</h3>
+        <p>Active Hosts</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Support Team</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>₱50K+</h3>
+        <p>Top Earnings</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop" alt="BIGO Host">
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="section-title">
+    <h2>Why Join Our Agency?</h2>
+    <p>Everything you need to become a successful BIGO streamer.</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="icon">🎤</div>
+      <h3>Daily Coaching</h3>
+      <p>Get professional training and streaming strategies from experienced managers.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">💰</div>
+      <h3>High Earnings</h3>
+      <p>Receive salary bonuses, gifts, commissions, and event rewards.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🚀</div>
+      <h3>Fast Growth</h3>
+      <p>Boost your followers and become a recognized creator on BIGO Live.</p>
+    </div>
+  </div>
+</
