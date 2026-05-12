@@ -29,6 +29,8 @@ body::before{
   radial-gradient(circle at bottom right,#00e5ff22,transparent 40%),
   radial-gradient(circle at center,#7b00ff22,transparent 40%);
   z-index:-1;
+  pointer-events:none;
+}
 }
 
 header{
@@ -42,6 +44,11 @@ header{
   top:0;
   background:rgba(0,0,0,0.4);
   z-index:999;
+}
+
+html{
+  scroll-behavior:smooth;
+}
 }
 
 .logo h1{
@@ -433,4 +440,114 @@ footer{
       <p>Boost your followers and become a recognized creator on BIGO Live.</p>
     </div>
   </div>
-</
+</section>
+
+<section class="form-section" id="apply">
+  <div class="form-container">
+    <div class="form-title">
+      <h2>BIGO Host Application Form</h2>
+      <p>Fill out the form below and submit your application.</p>
+    </div>
+
+    <form
+      action="https://formsubmit.co/crisnoel1217@gmail.com"
+      method="POST"
+      onsubmit="showThankYou()"
+    >
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="New BIGO Host Application">
+
+      <div class="input-group">
+        <label>First Name</label>
+        <input type="text" name="First Name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Last Name</label>
+        <input type="text" name="Last Name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Middle Name</label>
+        <input type="text" name="Middle Name">
+      </div>
+
+      <div class="input-group">
+        <label>Age</label>
+        <input type="number" name="Age" required>
+      </div>
+
+      <div class="input-group full">
+        <label>Address</label>
+        <input type="text" name="Address" required>
+      </div>
+
+      <div class="input-group">
+        <label>CP Number</label>
+        <input type="tel" name="CP Number" required>
+      </div>
+
+      <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" name="Email Address" required>
+      </div>
+
+      <div class="input-group">
+        <label>Valid Government ID</label>
+        <select name="Government ID" required>
+          <option value="">Select ID</option>
+          <option>Passport</option>
+          <option>National ID</option>
+          <option>Driver's License</option>
+          <option>PhilHealth ID</option>
+          <option>Postal ID</option>
+          <option>TIN ID</option>
+          <option>SSS ID</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Talent Category</label>
+        <select name="Talent Category" required>
+          <option value="">Select Talent</option>
+          <option>Singing</option>
+          <option>Dancing</option>
+          <option>Gaming</option>
+          <option>Entertainment</option>
+          <option>Comedy</option>
+          <option>Beauty Content</option>
+          <option>Vlogging</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        SUBMIT APPLICATION
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div>
+    © 2026 TRD BIGO HOST AGENCY. All rights reserved.
+  </div>
+
+  <div class="socials">
+    <a href="#">Facebook</a>
+    <a href="#">Telegram</a>
+    <a href="#">Instagram</a>
+  </div>
+</footer>
+
+<script>
+function showThankYou(){
+  setTimeout(() => {
+    alert('🎉 Thank you for applying to TRD BIGO HOST AGENCY! We will review your application and contact you soon.');
+  },500);
+}
+</script>
+
+</body>
+</html>
