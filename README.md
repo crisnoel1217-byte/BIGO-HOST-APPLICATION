@@ -225,7 +225,7 @@ footer{
 
 <header>
   <div class="logo">
-    <h1>TRD BIGO HOST APPLICATION SITE</h1>
+    <h1>TRD BIGO HOST APPLICATION</h1>
   </div>
   <a class="apply-btn" href="#apply">Apply Now!</a>
 </header>
@@ -302,7 +302,11 @@ onsubmit="showThankYou()">
 </select>
 
 <input class="full" type="file" name="Selfie Photo" accept="image/*" required>
-
+<div class="full">
+  <div class="note">⚠️ Rename file using your First Name (Example: Juan_Selfie.jpg)</div>
+  <img id="preview">
+  <div id="blurWarning">⚠️ Blurry image detected</div>
+</div>
 <button type="submit">SUBMIT APPLICATION</button>
 
 </form>
