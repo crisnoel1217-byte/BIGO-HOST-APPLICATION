@@ -245,7 +245,7 @@ footer{
   <div>
    <div class="hero-image">
     <img 
-      src="livestream-girl.png" 
+      src="livestream_girl.png" 
       alt="BIGO Livestream Host"
       style="
         width:100%;
