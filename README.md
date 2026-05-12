@@ -323,10 +323,8 @@ function showThankYou(){
 
 /* TikTok-style live feed */
 const names = [
-  "Maria just applied 🎤",
   "John joined agency 🔥",
   "Alexa submitted form 💖",
-  "Kevin applied now 🚀",
   "Angel joined TRD 🌟",
   "Kikay just applied 🎤",
   "Avie joined agency 🔥",
