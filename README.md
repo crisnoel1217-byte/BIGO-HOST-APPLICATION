@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="Pictures/stream_girl.png">
+    <img src="C:\Users\SONY\OneDrive\Pictures/stream_girl.png">
   </div>
 </section>
 
