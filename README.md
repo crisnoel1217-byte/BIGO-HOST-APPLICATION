@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -364,8 +364,8 @@ footer{
 
 <header>
   <div class="logo">
-    <h1>TRD BIGO HOST</h1>
-    <p>Modern Recruitment Platform</p>
+    <h1>TRD BIGO HOST APPLICATION</h1>
+    <p>Recruitment SITE</p>
   </div>
 
   <a href="#apply" class="apply-btn">Apply Now</a>
