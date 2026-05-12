@@ -243,7 +243,7 @@ footer{
   </div>
 
   <div>
-    <img src="https://www.facebook.com/photo?fbid=122095514558766666&set=a.122095503524766666">
+    <img src="model.jpg">
   </div>
 </section>
 
