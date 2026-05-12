@@ -243,7 +243,18 @@ footer{
   </div>
 
   <div>
-    <img src="C:\Users\SONY\OneDrive\Pictures/stream_girl.png">
+   <div class="hero-image">
+    <img 
+      src="livestream-girl.png" 
+      alt="BIGO Livestream Host"
+      style="
+        width:100%;
+        height:700px;
+        object-fit:cover;
+        border-radius:30px;
+      "
+    >
+</div>
   </div>
 </section>
 
