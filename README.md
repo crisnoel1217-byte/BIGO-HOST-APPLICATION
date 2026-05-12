@@ -333,7 +333,7 @@ const names = [
   "Regine submitted form 💖",
   "Ela applied now 🚀",
   "Xaez joined agency 🔥"
-  "Mark uploaded selfie 📸"
+  "Mark uploaded selfie 📸".
 ];
 
 function addFeed(){
