@@ -125,7 +125,7 @@ html{
 }
 
 .feed-item{
-  font-size:13px;
+  font-size:16px;
   color:#ddd;
   padding:5px 0;
   animation:fadeUp .5s ease;
@@ -227,7 +227,7 @@ footer{
   <div class="logo">
     <h1>TRD BIGO HOST APPLICATION SITE</h1>
   </div>
-  <a class="apply-btn" href="#apply">Apply Now</a>
+  <a class="apply-btn" href="#apply">Apply Now!</a>
 </header>
 
 <section class="hero">
@@ -278,7 +278,6 @@ onsubmit="showThankYou()">
 <input type="text" name="Middle Name" placeholder="Middle Name">
 
 <input type="number" name="Age" placeholder="Age" required>
-<input type="text" name="Address" placeholder="Address" required>
 
 <input type="tel" name="CP Number" placeholder="CP Number" required>
 <input type="email" name="Email" placeholder="Email Address" required>
@@ -311,7 +310,7 @@ onsubmit="showThankYou()">
 </section>
 
 <footer>
-  © 2026 TRD BIGO HOST AGENCY
+  © 2026 PH-TRD2 AGENCY|TRD10_28|CRISNOEL1217@GMAIL.COM
 </footer>
 
 <script>
@@ -333,6 +332,9 @@ const names = [
   "Regine submitted form 💖",
   "Ela applied now 🚀",
   "Xaez joined agency 🔥",
+  "OH SHEET joined agency 🔥",
+  "Soft joined agency 🔥",
+   "Hannah joined TRD 🌟",
   "Mark uploaded selfie 📸"
 ];
 
