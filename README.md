@@ -332,7 +332,7 @@ const names = [
   "Avie joined agency 🔥",
   "Regine submitted form 💖",
   "Ela applied now 🚀",
-  "Xaez joined agency 🔥"
+  "Xaez joined agency 🔥",
   "Mark uploaded selfie 📸"
 ];
 
