@@ -603,6 +603,14 @@ footer{
         </select>
       </div>
 
+      <div class="input-group full">
+        <label>Upload Selfie Photo Requirement</label>
+        <input type="file" name="Selfie Photo" accept="image/*" required>
+        <small style="color:#999;margin-top:10px;line-height:1.6;">
+          Please upload a clear selfie photo with good lighting. Avoid filters, masks, or unclear images.
+        </small>
+      </div>
+
       <button type="submit" class="submit-btn">
         SUBMIT APPLICATION
       </button>
