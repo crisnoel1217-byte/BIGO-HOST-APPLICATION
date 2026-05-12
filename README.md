@@ -203,6 +203,7 @@ footer{
     <div class="feature-card">🪪 Valid Government ID</div>
     <div class="feature-card">🔞 Must be 18 years old above</div>
     <div class="feature-card">🎤 Setup: Ring light, mic, sound card</div>
+    <div class="feature-card">Internet connection</div>
   </div>
 </section>
 
